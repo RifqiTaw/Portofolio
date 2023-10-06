@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- font Poppins & Raleway -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <title>Portofolio Tailwindcss</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a5ff26015b.js" crossorigin="anonymous"></script>
+  <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ['Poppins'],
+            },
+            colors: {
+              'red': '#EC1B09',
+              'orange': '#FF9C1A',
+            },
+          },
+        },
+      };
+  </script>
+</head>
+<body>
+    <main>
+        <!-- header judul -->
+        <header class="font-poppins">
+          <img src="img/logo.png" class="ml-5">
+        </header>
+
+        <!-- navbar toggle -->
+        <nav class="mb-10">
+          <ul class="max-w-fit mx-auto sm:items-center font-raleway lg:float-right lg:mr-[150px] lg:mb-10">
+              <li class="inline-block rounded-[12px] hover:bg-[#FF9C1A] active:bg-[#FF9C1A]">
+                <a class="w-5 h-5 text-[15px] text-center text-slate-600 inline-block m-6 lg:m-7" href="landing.html"><i class="fa-solid fa-house"></i>Home</a>
+              </li> 
+              <li class="inline-block justify-content-center bg-[#FF9C1A] rounded-[12px] hover:bg-[#FF9C1A] active:bg-[#FF9C1A]">
+                <a class="w-5 h-5 text-[15px] text-center text-white inline-block m-6 lg:m-7" href="resume.html"><i class="fa-solid fa-file"></i>Resume</a>
+              </li>
+
+              <li class="inline-block rounded-[12px] hover:bg-[#FF9C1A] active:bg-[#FF9C1A]">
+                <a class="w-5 h-5 text-[15px] text-center text-slate-600 inline-block m-6 lg:m-7" href="kontak.html"><i class="fa-solid fa-address-book"></i>Contact</a>
+              </li>
+          </ul>
+        </nav>
+
+        <!-- Main -->
+        <div class="px-6 max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:p-20">
+
+          <!-- Sidebar konten kiri -->
+          <aside class="font-raleway">
+            <div class=" max-w-lg mx-auto space-y-2 sm:py-4 sm:items-center sm:space-y-0 sm:space-x-6">
+                <img class="mx-auto h-[200px] w-[200px] rounded-xl sm:text-center sm:shrink-0 bg-[#FF9C1A]" src="img/Picture1.png" alt="Woman's Face" />
+                <div class="text-center space-y-2 sm:text-center">
+                  <div class="space-y-0.5 sm:mt-5">
+                    <p class="text-lg text-black font-semibold">
+                      Rifqi Taufiqurrohman
+                    </p>
+                    <p class="text-slate-500 font-medium">
+                      Fullstack Developer
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="relative">
+              <ul class="ml-20 max-w-lg font-raleway sm:items-center sm:ml-40 md:ml-52 lg:ml-3">
+                <li class="inline-block"> 
+                  <a class="m-5 text-[20px] text-center text-sky-700 inline-block" href="https://www.linkedin.com/in/jigar-sable/" ><i class="fab fa-facebook"></i></a>
+                </li> 
+                <li class="inline-block">
+                  <a class="m-5 text-[20px] text-center text-sky-700 inline-block" href="https://github.com/jigar-sable" ><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="inline-block">
+                  <a class="m-5 text-[20px] text-center text-sky-500 inline-block " href="https://twitter.com/jigar_sable" ><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="inline-block">
+                  <a class="m-5 text-[20px] text-center inline-block " href="https://t.me/lifecode5" ><i class="fab fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="contact section" id="contact">
+              <div class="contact__container container grid">
+                  <div class="mx-auto">
+                      <div class="m-8">
+
+                          <div>
+                            <i class="fa-solid fa-mobile-screen-button text-amber-700"></i>
+                          </div>
+                          <div>
+                              <h3 class="contact__title">Call me</h3>
+                              <span class="contatc__subtitle">(+94) 755422421</span>
+                          </div>
+                      </div>
+    
+                      <div class="m-8">
+                          <i class="fa-regular fa-envelope-open text-amber-600"></i>
+    
+                          <div>
+                              <h3 class="contact__title">E-mail</h3>
+                              <span class="contatc__subtitle">rifqitaufiqurrohman1@gmail.com</span>
+                          </div>
+                      </div>
+    
+                      <div class="m-8">
+                          <i class="fa-solid fa-location-dot text-amber-800"></i>
+                          <div>
+                              <h3 class="contact__title">Location</h3>
+                              <span class="contatc__subtitle">Sidoarjo, Indonesia</span>
+                          </div>
+                      </div>
+                      <button class="my-10 px-5 py-2 bg-[#FF9C1A] rounded-full text-white block mx-auto hover:bg-amber-600 active:bg-amber-700"><i class="fa-solid fa-download"></i> Download Resume</button>
+                  </div>
+              </div>
+    
+            </div>
+          </aside>
+
+          <!-- Konten kanan -->
+          <section class="lg:ml-40 ">
+            <!-- main -->
+            <div class="mb-5 sm:mb-10 md:mb-14 lg:mb-20 ">
+                <!-- cara membuat columns gambar -->
+                <h3 class="text-base font-bold sm:text-xl md:text-2xl font-poppins">Resume</h3>
+                <svg height="10" width="500">
+                  <line x1="0" x2="1000" style="stroke:#FF9C1A;stroke-width:2" />
+                  Sorry, your browser does not support inline SVG.
+                </svg>
+                <div class="mx-auto border rounded-lg shadow-lg columns-2">
+                    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+                      <h3 class="mt-5 mb-5 text-xl font-semibold sm:text-xl md:text-2xl font-poppins"><i class="fa-solid fa-graduation-cap text-amber-600"></i> Education</h3>
+                      <div class="px-6 py-4 bg-amber-100 font-raleway">
+                        <div class="text-slate-400">
+                            <p>2016-2021</p>
+                        </div>
+                        <div class="font-semibold">
+                            <p>Informatic Engineering</p>
+                        </div>
+                        <div>
+                            <p>Telkom University</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 font-raleway">
+                      <div class="px-6 py-4">
+                        <div class="text-slate-400">
+                            <p>2013-2016</p>
+                        </div>
+                        <div class="font-semibold">
+                            <p>IPA</p>
+                        </div>
+                        <div>
+                            <p>SMA Muhammadiyah 2 SDA</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+                      <h3 class="mt-5 mb-5 text-xl font-semibold sm:text-xl md:text-2xl font-poppins"><i class="fa-solid fa-briefcase text-amber-600"></i> Experience</h3>
+                      <div class="px-6 py-4 font-raleway">
+                        <div class="text-slate-400">
+                            <p>2022-Present</p>
+                        </div>
+                        <div class="font-semibold">
+                            <p>Programmer</p>
+                        </div>
+                        <div>
+                            <p>Yayasan Pendidikan Telkom</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 font-raleway">
+                      <div class="px-6 py-4 bg-amber-100">
+                        <div class="text-slate-400">
+                            <p>2019</p>
+                        </div>
+                        <div class="font-semibold">
+                            <p>Team ICT</p>
+                        </div>
+                        <div>
+                            <p>PT. PERTAMINA EP ASSET 4</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                </div>
+              </div>
+            
+              <!-- HardSkill and Softskill -->
+              <div class="mb-5">
+                <div class="mx-auto border rounded-lg shadow-lg columns-2">
+                    <h3 class="mb-3 text-base font-semibold sm:text-xl md:text-2xl font-poppins">Work Skills</h3>
+                    <div class="rounded-md shadow-lg overflow-hidden sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+                      <div class="flex flex-wrap font-raleway">
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                            <p>Laravel</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                            <p>React Js</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                            <p>HTML 5</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>CSS </p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Tailwind CSS</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Corel</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Javascript</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Mongo DB</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>SQL</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Next.js</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Github</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Git</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
+                      <h3 class="mb-3 text-base font-semibold text-slate-800 sm:text-xl md:text-2xl font-poppins">Soft Skills</h3>
+                      <div class="flex flex-wrap text-base font-raleway">
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg lg:mr-3">
+                          <p>Time Management</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Menthorship</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Leadership</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Flexibility</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Research</p>
+                        </div>
+                        <div class="mr-5 mb-5 bg-slate-200 rounded-lg">
+                          <p>Writing</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+          </section>
+        </div>
+
+    </main>
+</body>
+</html>
