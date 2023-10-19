@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font pacifico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- font raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              pacifico: ['Pacifico'],
+              poppins: ['Poppins'],
+              raleway: ['Raleway'],
+            },
+            colors: {
+              'red': '#EC1B09',
+              'orange': '#FF9C1A',
+            },
+          },
+        },
+      };
+    </script>
+    <title>Portofolio Rifqi Taufiqurrohman</title>
+</head>
+
+<body class="max-w-screen-xl m-auto">
+    <!-- max-w-screen-xl = 1200px sesuai layar browser -->
+
+    <!-- Logo Header -->
+    <header class="flex p-4">
+        <h4 class="text-[#FF9C1A] font-pacifico font-normal text-[24px]">My<span class="text-[#EC1B09]">Portofolio</span></h4>
+    </header>
+
+    <!-- Main Konten -->
+    <main class="grid grid-cols-12">
+        <!-- Sidebar Profile -->
+        <div class="col-span-12 lg:col-span-4">
+            <div class="content-center bg-white rounded-3xl pb-4 m-4">
+                <div class="pt-16">
+                    <img src="img/rifqi1.jpg" class="h-[200px] w-[200px] flex m-auto rounded-2xl">
+                </div>
+                <div class="pt-4">
+                    <h3 class="text-center p-1 font-poppins font-semibold text-[24px]">Rifqi Taufiqurrohman</h3>
+                    <p class="text-center p-1 font-raleway text-[14px] font-normal">Fullstack Web Developer</p>
+                </div>
+                <div class="flex place-content-center p-2">
+                    <a href="#"><i class="fab fa-facebook bg-slate-100 p-4 m-1 rounded-lg text-blue-800"></i></a>
+                    <a href="#"><i class="fab fa-linkedin bg-slate-100 p-4 m-1 rounded-lg text-blue-400"></i></a>
+                    <a href="#"><i class="fab fa-instagram bg-slate-100 p-4 m-1 rounded-lg text-pink-500"></i></a>
+                    <a href="#"><i class="fab fa-github bg-slate-100 p-4 m-1 rounded-lg"></i></a>
+                </div>
+                <div class="w-[80%] m-auto bg-slate-100 rounded-3xl mb-16">
+                    <div class="grid grid-rows-2 grid-flow-col items-center m-auto p-3">
+                        <div class="row-span-3">
+                            <a href="#"><i class="fa fa-mobile-android-alt text-[#ff9c1a] m-auto p-5"></i></a>
+                        </div>
+                        <div class="col-span-2">
+                            <p class="font-raleway text-[14px] font-normal">phone</p>
+                        </div>
+                        <div class="col-span-2">
+                            <p class="font-raleway text-[14px] font-normal">+62 822-2323-2333</p>
+                        </div>
+                    </div>
+                    <hr class="w-[70%] h-[1px] m-auto bg-slate-400 border-0 rounded">
+                    <div class="grid grid-rows-2 grid-flow-col items-center m-auto p-3">
+                        <div class="row-span-3">
+                            <a href="#"><i class="fa-regular fa-envelope-open text-[#ff9c1a] m-auto p-5"></i></a>
+                        </div>
+                        <div class="col-span-2">
+                            <p class="font-raleway text-[14px] font-normal">Email</p>
+                        </div>
+                        <div class="col-span-2">
+                            <p class="font-raleway text-[14px] font-normal">rifqitaw@gmail.com</p>
+                        </div>
+                    </div>
+                    <hr class="w-[70%] h-[0.5px] m-auto bg-slate-400 border-0 rounded">
+                    <div class="grid grid-rows-2 grid-flow-col items-center m-auto p-3">
+                        <div class="row-span-3">
+                            <a href="#"><i class="fa fa-location-dot text-[#ec1b09] m-auto p-5"></i></a>
+                        </div>
+                        <div class="col-span-2">
+                            <p class="font-raleway text-[14px] font-normal">Location</p>
+                        </div>
+                        <div class="col-span-2">
+                            <p class="font-raleway text-[14px] font-normal">Sidoarjo, Indonesia</p>
+                        </div>
+                    </div>
+                    <hr class="w-[70%] h-[0.5px] m-auto bg-slate-400 border-0 rounded">
+                    <div class="flex m-auto p-5">
+                        <button class="m-auto py-[.5rem] px-4 bg-[#ff9c1a] rounded-3xl text-white font-raleway text-[14px] font-medium">
+                            <i class="fa fa-download mr-4"></i>Download Resume
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav-bar Kanan  -->
+        <div class="col-span-12 lg:col-span-8">
+            <div class="grid grid-cols-8 pt-16">
+                <!-- Navbar -->
+                <div class="col-span-8 lg:col-span-4 lg:col-start-4 bg-white rounded-3xl shadow-xl m-4 lg:mt-0 lg:mb-0">
+                    <div class="flex p-4 m-auto border-slate-900 rounded-2xl">
+                        <a href="landing revisi.html" class="grid grid-rows-2 bg-[#ff9c1a] m-auto p-6 rounded-xl shadow text-white">
+                            <i class="row-span-1 fa fa-home m-auto"></i>
+                            <p class="row-span-2 font-raleway text-[14px] font-normal">Home</p>
+                        </a>
+                        <a href="resume revisi.html" class="grid grid-rows-2 bg-slate-200 m-auto p-6 rounded-xl shadow  focus:bg-[#ff9c1a] focus:text-white">
+                            <i class="row-span-1 fa fa-file-lines m-auto"></i>
+                            <p class="row-span-2 font-raleway text-[14px] font-normal">Resume</p>
+                        </a>
+                        <a href="kontak revisi.html" class="grid grid-rows-2 bg-slate-200 m-auto p-6 rounded-xl shadow focus:text-white">
+                            <i class="row-span-1 fa fa-address-book m-auto"></i>
+                            <p class="row-span-2 font-raleway text-[14px] font-normal">Contact</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Konten About Me -->
+                <div class="col-span-8 lg:col-span-8 lg:col-start-1 bg-white m-4 lg:mr-0 rounded-3xl">
+                    <div class="col-span-2 lg:col-span-2">
+                        <div class="m-8">
+                            <div class="grid grid-cols-3">
+                                <h1 class="text-center col-span-1 m-2 font-poppins text-[40px] font-medium">
+                                    About Me
+                                </h1>
+                                <hr class="col-start-2 col-span-1 w-[252px] h-[2px] m-auto bg-[#EC1B09] border-0 rounded" >
+                            </div>
+                            <p class="m-10 font-raleway text-[16px] font-medium">Saya seorang Entry-Level Web Development. Saya memiliki keinginan kuat untuk memperluaspengetahuan saya, selalu bersemangat untuk mengeksplorasi teknologi baru. Saya memilikikemampuan untuk dengan cepat memahami konsep-konsep baru dan beradaptasi denganlingkungan baru. Saya tertarik dan memiliki pengalaman di industri teknologi informasi.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 grid-flow-row m-8 p-4">
+                        <h3 class="col-span-2 p-4 font-poppins text-[32px] font-medium">What I Do</h3>
+                        <div class="col-start-1 col-span-2 lg:col-span-1 bg-[#FFEBD1] rounded-xl m-3">
+                            <div class="p-8">
+                                <h3 class="font-poppins text-[24px] font-semibold"><i class="fa-solid fa-code text-red "></i> Web Development</h3>
+                                <p class="font-raleway text-[14px] font-normal">Membuat beberapa Project kecil berbasis web. menggunakan bahasa pemrograman seperti HTML + CSS + Javascript + PHP memakai Framwork Laravel.</p>
+                            </div>
+                        </div>
+                        <div class="col-start-1 col-span-2 lg:col-span-1 bg-[#F2F7FC] rounded-xl m-3">
+                            <div class="p-8">
+                                <h3 class="font-poppins text-[24px] font-semibold"><i class="fa-solid fa-tent text-amber-600"></i> Bootcamp Harisenin</h3>
+                                <p class="font-raleway text-[14px] font-normal">Mengikuti Bootcamp Harisenin sebagai Fullstack Developer. untuk menambah pengalaman dan memperdalam dasar - dasar bahasa pmerograman dari front-end maupun backend web.</p>
+                            </div>
+                        </div>
+                        <div class="col-start-1 col-span-2 lg:col-span-1 bg-[#F2F7FC] rounded-xl m-3">
+                            <div class="p-8">
+                                <h3 class="font-poppins text-[24px] font-semibold"><i class="fa-solid fa-pencil text-amber-600"></i> Corel Draw</h3>
+                                <p class="font-raleway text-[14px] font-normal">Mengikuti Pelatihan Dasar Corel Draw. karena saya merasa diFullstack Developer juga perlu melakukan desain grafis untuk front end kedepannya.</p>
+                            </div>
+                        </div>
+                        <div class="col-start-1 col-span-2 lg:col-span-1 bg-[#FFEBD1] rounded-xl m-3">
+                            <div class="p-8">
+                                <h3 class="font-poppins text-[24px] font-semibold"><i class="fa-solid fa-laptop text-amber-600"></i> Magang</h3>
+                                <p class="font-raleway text-[14px] font-normal">Saat ini saya sedang mengikuti magang disuatu perusahaan pendidikan sebagai Programmer ditim aplikasi. yang dimana salah satu tugasnya membenarkan bug aplikasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      
+</body>
+
+</html>
